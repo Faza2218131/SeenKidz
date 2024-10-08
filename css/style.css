@@ -156,3 +156,240 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
+
+
+/* Login Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-box {
+    background-color: #C6D5E2;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: large;
+    margin-bottom: 20px;
+    color: #800000;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.btn_login {
+    width: 100%;
+    padding: 12px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn_login:hover {
+    background-color: #555;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link p {
+    font-size: 1em;
+    color: #555;
+}
+
+.signup-link a {
+    color: #800000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Register Page Styles */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.register-box {
+    background-color: #C6D5E2;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.register-box h2 {
+    font-size: large;
+    margin-bottom: 20px;
+    color: #800000;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.btn_register {
+    width: 100%;
+    padding: 12px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn_register:hover {
+    background-color: #555;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link p {
+    font-size: 1em;
+    color: #555;
+}
+
+.login-link a {
+    color: #800000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for All Pages */
+
+/* Untuk perangkat dengan lebar maksimal 768px (tablet dan ponsel) */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .jumbotron {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+    }
+
+    .jumbotron-text h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .jumbotron-text p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .jumbotron-img img {
+        width: 100%;
+        height: auto;
+        max-width: 300px; /* Batasi lebar gambar jumbotron */
+    }
+
+    .cards-categories {
+        padding: 30px 10px;
+    }
+
+    .card-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Ubah lebar kartu agar lebih kecil di perangkat kecil */
+        margin-bottom: 20px; /* Tambahkan margin bawah untuk pemisahan */
+    }
+
+    .login-box, .register-box {
+        width: 90%; /* Ubah lebar box login/register */
+    }
+    .btn_login {
+        width: 100%; /* Tombol Login memenuhi lebar */
+        margin-top: 10px; /* Menambahkan jarak di atas tombol */
+    }
+
+}
