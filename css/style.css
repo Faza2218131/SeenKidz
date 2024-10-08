@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #800000;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation Styling */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: background 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.jumbotron-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.jumbotron-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn_getStarted {
+    padding: 10px 20px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn_getStarted:hover {
+    background-color: #555;
+}
+
+.jumbotron-img img {
+    width: 500px;
+}
+
+/* Card Categories Styling */
+.cards-categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cards-categories h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.card-categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-content h5 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.card-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.btn_learnMore {
+    padding: 10px 20px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn_learnMore:hover {
+    background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #800000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
