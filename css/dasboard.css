@@ -188,6 +188,20 @@ td img {
     background-color: #555;
 }
 
+#datetime {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    color: #800000;
+    text-align: center; 
+    margin-top: 20px; /* Jarak atas */
+    padding: 10px 0; /* Padding untuk jarak di dalam elemen */
+    width: fit-content; /* Ukuran lebar otomatis mengikuti konten */
+    margin-left: auto; /* Agar elemen berada di tengah */
+    margin-right: auto; /* Agar elemen berada di tengah */
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .dashboard-container {

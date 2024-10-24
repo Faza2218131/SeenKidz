@@ -15,6 +15,14 @@
 </head>
 
 <body>
+    <!-- Popup Structure -->
+<div id="popup" class="popup-box">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3 id="popup-title"></h3>
+        <p id="popup-message"></p>
+    </div>
+</div>
     <div class="container">
         <!-- Header Section -->
         <header>
@@ -92,17 +100,50 @@
         </footer>
     </div>
     <script>
+        // Function to show the popup
+        function showPopup(title, message) {
+            // Get the popup elements
+            var popup = document.getElementById("popup");
+            var popupTitle = document.getElementById("popup-title");
+            var popupMessage = document.getElementById("popup-message");
+        
+            // Set title and message
+            popupTitle.textContent = title;
+            popupMessage.textContent = message;
+            
+            // Show the popup
+            popup.style.display = "block";
+        }
+        
+        // Get the close button element
+        var closeBtn = document.getElementsByClassName("close-popup")[0];
+        
+        // Close the popup when the close button is clicked
+        closeBtn.onclick = function() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+        
+        // Close the popup when user clicks outside the popup content
+        window.onclick = function(event) {
+            var popup = document.getElementById("popup");
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
+        
+        // Event listeners for each category
         document.getElementById("Potrait").addEventListener("click", function() {
-            alert("Anda memilih Potrait Photography!");
+            showPopup("Portrait Photography", "Anda memilih Potrait Photography! Belajar cara terbaik menangkap potret dengan pencahayaan sempurna.");
         });
         
         document.getElementById("Landscape").addEventListener("click", function() {
-            alert("Anda memilih Landscape Photography!");
+            showPopup("Landscape Photography", "Anda memilih Landscape Photography! Temukan tips untuk menangkap keindahan alam.");
         });
         
         document.getElementById("Street").addEventListener("click", function() {
-            alert("Anda memilih Street Photography!");
+            showPopup("Street Photography", "Anda memilih Street Photography! Jelajahi seni menangkap momen kehidupan sehari-hari.");
         });
-    </script>
+        </script>        
 </body>
 </html>
