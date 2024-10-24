@@ -55,7 +55,7 @@
                         <div class="card-image">
                             <img src="pict/landscape.jpg" alt="Landscape Photography" />
                         </div>
-                        <div class="card-content">
+                        <div class="card-content" id="Landscape">
                             <h5>Landscape</h5>
                             <p>Discover techniques and tips to capture stunning landscapes from around the world.</p>
                             <button class="btn_learnMore" type="button">Learn More</button>
@@ -65,7 +65,7 @@
                         <div class="card-image">
                             <img src="pict/potrait.jpg" alt="Portrait Photography" />
                         </div>
-                        <div class="card-content">
+                        <div class="card-content" id="Potrait">
                             <h5>Portrait</h5>
                             <p>Master the art of portrait photography, from lighting to posing.</p>
                             <button class="btn_learnMore" type="button">Learn More</button>
@@ -75,7 +75,7 @@
                         <div class="card-image">
                             <img src="pict/street.jpg" alt="Street Photography" />
                         </div>
-                        <div class="card-content">
+                        <div class="card-content" id="Street">
                             <h5>Street</h5>
                             <p>Capture the raw, authentic moments of everyday life through street photography.</p>
                             <button class="btn_learnMore" type="button">Learn More</button>
@@ -91,6 +91,18 @@
             <h4>&copy; Seenkidz Photography 2024</h4>
         </footer>
     </div>
+    <script>
+        document.getElementById("Potrait").addEventListener("click", function() {
+            alert("Anda memilih Potrait Photography!");
+        });
+        
+        document.getElementById("Landscape").addEventListener("click", function() {
+            alert("Anda memilih Landscape Photography!");
+        });
+        
+        document.getElementById("Street").addEventListener("click", function() {
+            alert("Anda memilih Street Photography!");
+        });
+    </script>
 </body>
-
 </html>
